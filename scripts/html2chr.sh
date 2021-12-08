@@ -10,6 +10,8 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 XSS_PREFIX='document.body.innerHTML=`'
 XSS_SUFFIX='`'
+# XSS_PREFIX='document.write(`'
+# XSS_SUFFIX='`)'
 echo "$XSS_PREFIX$minified$XSS_SUFFIX"
 # Convert to ascii
 ascii=$(bash "$DIR/str2utf.sh" "$XSS_PREFIX$minified$XSS_SUFFIX")
