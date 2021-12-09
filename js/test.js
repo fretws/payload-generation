@@ -1,1 +1,1 @@
-alert("Worked")
+function a() {alert("Worked")}

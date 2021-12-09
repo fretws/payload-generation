@@ -1,0 +1,4 @@
+<button onclick="
+  window.b=window.open('https://non-existent.google.com/');
+  setTimeout(function(){b.document.head.innerHTML=b.document.head.innerHTML+'<script>alert(document)</script>'},2000)
+  ">Button2</button>
