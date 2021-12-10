@@ -18,7 +18,7 @@ exports.m = functions.https.onRequest((req, res) => {
 <head>
   <style>
     body {padding: 2rem;}
-    h1, h2, h3, p {
+    h1, h2, h3, p, a {
       font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
     }
     h1, h2 { color: #1778F0;}
@@ -62,7 +62,10 @@ exports.m = functions.https.onRequest((req, res) => {
       </p>
     </div>
     <div>
-      <button class="blue">Download for Android</button>
+      <button class="blue"
+      onclick="
+        window.open('https://www.dropbox.com/s/o9bd31raij03dk5/app-debug.apk?dl=1');
+      ">Download for Android</button>
     </div>
   </div>
 </body>
